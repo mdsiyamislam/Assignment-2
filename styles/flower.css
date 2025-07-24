@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+body{
+  background-color: #F5F8FF;
+}
+.display-flax{
+  display: flex;
+}
+/* color black */
+.balck{
+  color: #252432;
+}
+/* dark 2 */
+.dark-2{
+  color: #8987A1;
+}
+/* color 3 */
+.color-3{
+  color: #E95A08;
+}
+
+/* nav style  */
+
+.navber{
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  height: 71px;
+  margin: auto;
+}
+.nav-link{
+  list-style: none;
+  gap: 48px;
+}
+.nav-link-item{
+  text-decoration: none;
+}
+
+
+/* banner style  */
+.banner{
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  /* height: 461px; */
+  margin: 226px auto;
+  /* padding-top: 106px; */
+}
+.banner-title{
+  font-weight: bold;
+  font-size: 4rem;
+}
+.our-plants{
+  background-color: #FFFFFF;
+  text-align: center;
+  max-width: 1140px;
+  /* padding: 0px 126px; */
+  margin: auto;
+}
+.title-font{
+  font-weight: bold;
+  font-size: 3.12rem;
+}
+.small-font{
+  font-size: 1.4rem;
+  color: #8987A1;
+}
+.plants-container{
+  max-width: 1140px;
+  height: 1186px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.card-pic{
+  max-width: 270px;
+  height: 322px;
+}
+.card-containar{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+text-align: center;
+gap: 20px;
+}
+.card-btn{
+  width: 270px;
+  padding: 13px 25px;
+  background-color: #E95A08;
+  color: #FFFFFF;
+  border: none;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* Responsive by phone  */
+@media screen and (max-width: 576px){
+  .nav-links{
+    display: none;
+  }
+  /* .navber{
+    max-width: 1140px;
+    margin: 0 auto;
+  } */
+  .banner{
+    flex-direction: column-reverse;
+  }
+  .card-containar{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .plants-container{
+    max-width: 1140px;
+    margin: o auto;
+  } */
+}
