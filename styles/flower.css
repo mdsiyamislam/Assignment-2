@@ -96,20 +96,25 @@ body{
   text-align: center;
 }
 .shop-now-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
   max-width: 1140px;
-  margin: 120px auto;
-  gap: 28px;
+  height: 424px;
+  margin:120px auto;
+  gap: 0px;
 }
 .shop-now-frist{
   background-image: url(../assets/deal-bloom.png);
   background-repeat: no-repeat;
-  background-position: center; 
+  /* background-position: center;  */
   justify-content: center;
   align-items: center;
-  text-align: center
-  color  #F5F8FF;
+  /* padding: 65px 48px 114px; */
+  color : #F5F8FF;
   width: 100%;
   height: 100%;
+  border-radius: 10px;  
 }
 .shop-now-second{
   background-image: url(../assets/deal-ana.png);
@@ -117,11 +122,12 @@ body{
   /* background-position: center; */
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  /* padding: 60px 48px 114px ; */
   color: #F5F8FF;
   width: 100%;
   /* height: 50%; */
   height: 100%;
+  border-radius: 10px;
 }
 .shop-now-third{
   background-image: url(../assets/deal-zabo.png);
@@ -129,11 +135,19 @@ body{
   /* background-position: center; */
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: #F5F8FF;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
+.shop-now-doble{
+  height: calc( (100% - 35px)/2 ); 
+}
+.shop-now-frist,.shop-text-second{
+  text-align: center;
+  margin: -7 110px;
+}
+
 
 /* jion sector  */
 .join-bunch{
@@ -162,6 +176,24 @@ body{
   font-size: 3.12rem;
   font-weight: bold;
   color: #FFFFFF;
+}
+
+.footer{
+  max-width: 1440px;
+  margin: 50px 170px 100px auto;
+  gap: 110px;
+  
+  justify-content: center;
+}
+
+.desh{
+  margin-bottom: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #8987A1;;
+}
+.icon{
+  gap: 24px;
 }
 
 @media screen and (max-width: 576px){
@@ -201,10 +233,20 @@ display: none;
 .lover-pic{
   width: 358px;
 }  
+.shop-now-container{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.shop-now-doble, .shop-now-third{
+  max-width: 100%;
+}
 
 .join-bunch{
   max-width: 100%;
   height: 100%;
+}
+.footer{
+  flex-direction: column;
 }
 
 }
