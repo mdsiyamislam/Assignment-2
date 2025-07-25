@@ -70,11 +70,12 @@ body{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+
 }
 .card-btn{
   background-color: #E95A08;
   color: #FFFFFF;
-  padding: 19px 80px;
+  padding: 19px 88px;
   margin-bottom: 20px;
   border: none;
 }
@@ -89,6 +90,80 @@ body{
   margin-top: -130px;
   margin-left: -190px;
 }
+
+.latest-deals{
+  justify-content: center;
+  text-align: center;
+}
+.shop-now-container{
+  max-width: 1140px;
+  margin: 120px auto;
+  gap: 28px;
+}
+.shop-now-frist{
+  background-image: url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  justify-content: center;
+  align-items: center;
+  text-align: center
+  color  #F5F8FF;
+  width: 100%;
+  height: 100%;
+}
+.shop-now-second{
+  background-image: url(../assets/deal-ana.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  color: #F5F8FF;
+  width: 100%;
+  /* height: 50%; */
+  height: 100%;
+}
+.shop-now-third{
+  background-image: url(../assets/deal-zabo.png);
+   background-repeat: no-repeat;
+  /* background-position: center; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #F5F8FF;
+  width: 100%;
+  height: 100%;
+}
+
+/* jion sector  */
+.join-bunch{
+  margin: 120px auto;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  padding: 185px 0;
+}
+#email{
+  width: 50%;
+  border: none;
+  height: 40px;
+}
+#btn{
+  width: 10%;
+  margin-left: -3px;
+  border: none;
+  background-color: #E95A08;
+  color: #FFFFFF;
+  height: 40px;
+}
+#text{
+  font-size: 3.12rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 576px){
   .banner{
     flex-direction: column-reverse;
@@ -103,25 +178,33 @@ body{
   .card-content{
     grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  
   }
   .plant-card{
   max-width: 175px;
+  } 
+   .plant-pic{
+    width: 175px; 
   }
-  .plant-pic{
-    width: 175px;
-  }
-  .card-btn{
+.card-btn{
     max-width: 175px;
     margin-bottom: 0;
     padding: 12px 42px;
-  }
-.plant-sil{
-    display: none;
-  }
+  }  
+   .plant-sil{
+display: none;
+   } 
+  
   .plants-lover{
     flex-direction: column;
   }
 .lover-pic{
   width: 358px;
 }  
+
+.join-bunch{
+  max-width: 100%;
+  height: 100%;
+}
+
 }
